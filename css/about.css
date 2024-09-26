@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+
+
+.about-section {
+    background-color: #4A290A;
+    height : fit-content;
+    padding: 30px 20px 30px 0px;
+    display: flex;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    width: 40%;
+}
+
+.about-img img {
+    width: 600px;
+}
+
+.about-text {
+    margin: 50px;
+    width: 60%;
+}
+
+.about-text h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: right;
+    color: #DCA573;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.about-text span {
+    color: #FEE6C0;
+}
+
+.about-text > p {
+    color: #FEE6C0;
+    font-weight: 600;
+    margin: 20px 0px 20px 0px;
+    text-align: right;
+}
+
+.about-grid {
+    display: grid; 
+    margin-left: 30px;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+.about-item {
+    background-color: #A97D55;
+        padding: 10px 15px 10px 15px;
+        border-radius: 30px;
+        color: #FFF7EB;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+}
+
+.about-item h3 {
+    font-size: 18px;
+}
+
+.about-item p {
+    font-size: 10px;
+}
+
+@media (max-width: 767px) {
+    .about-section {
+        background-color: #4A290A;
+        height : fit-content;
+        padding: 30px 20px 30px 0px;
+        display: flex;
+        padding-right: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 340px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .about-text h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .about-text > p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .about-grid {
+        display: grid; 
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: repeat(1, 4fr); 
+        gap: 20px;
+    }
+    
+    .about-item {
+        width: fit-content;
+        background-color: #A97D55;
+        padding: 10px 30px 10px 30px;
+        border-radius: 30px;
+        color: #FFF7EB;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about-item h3 {
+        font-size: 14px;
+    }
+    
+    .about-item p {
+        font-size: 8px;
+    }
+
+    .about-img {
+        width: 0%;
+    }
+
+    .about-img img {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1050px) {
+    .about-section {
+        background-color: #4A290A;
+        height : fit-content;
+        padding: 30px 20px 30px 0px;
+        display: flex;
+        padding-right: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 600px;
+        text-align: center;
+    }
+
+    .about-text h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .about-text > p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .about-grid {
+        margin: 0px;
+    }
+
+    .about-item h3 {
+        font-size: 16px;
+    }
+    
+    .about-item p {
+        font-size: 10px;
+    }
+
+    .about-img {
+        width: 0%;
+    }
+
+    .about-img img {
+        display: none;
+    }
+    
+    .about-img {
+        width: 0%;
+    }
+
+    .about-img img {
+        display: none;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1268px) {
+    .about-img img {
+        width: 500px;
+    }
+
+    .about-text h1 {
+        font-size: 70px;
+    }
+
+    .about-text > p {
+        font-size: 14px;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .about-item {
+        padding: 10px 9px 10px 9px;
+    }
+
+    .about-item h3 {
+        font-size: 15px;
+    }
+    
+    .about-item p {
+        font-size: 8.5px;
+    }
+}
