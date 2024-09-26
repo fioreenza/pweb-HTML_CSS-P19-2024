@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+
+body {
+    background-color: #FFF7EB;
+}
+
+.hero-section {
+    min-height: 100vh;
+    padding: 0px 10px 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    width: 65%;
+}
+
+.hero-text h1 {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #774E29;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.hero-text span {
+    color: #4A290A;
+}
+
+.hero-text p {
+    color: #4A290A;
+    font-weight: 600;
+    margin: 20px 0px 20px 0px;
+}
+
+.button-container {
+    display: flex;
+    column-gap: 20px;
+}
+
+.hero-text button {
+    background-color: #774E29;
+    padding: 5px 20px 5px 20px;
+    color: #FFF7EB;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.hero-img {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-img img {
+    width: 400px;
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        background-image: url('/images/flyingbean.png'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        min-height: 100vh;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .hero-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-img {
+        width: 0%;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-text p {
+        font-size: 8px;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    .hero-img img {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1050px) {
+    .hero-section {
+        background-image: url('/images/flyingbean.png'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        min-height: 100vh;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .hero-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-img {
+        width: 0%;
+    }
+
+    .hero-text h1 {
+        font-size: 90px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    .hero-img img {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 1050px) and (max-width: 1268px) {
+    .hero-text h1 {
+        font-size: 80px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+    }
+
+    .hero-img img {
+        width: 400px;
+    }
+}
