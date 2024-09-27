@@ -435,3 +435,42 @@ body {
         font-size: 8.5px;
     }
 }
+.testimonials-section {
+    background-color: #f3e4cd;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testimonials-section h2 {
+    font-size: 36px;
+    color: #7b5936;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-item {
+    background-color: #7b5936;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    font-weight: 400;
+}
