@@ -224,9 +224,13 @@ body {
 .about-text {
     margin: 50px;
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
 }
 
-.about-text h1 {
+.about-heading h1 {
     font-size: 80px;
     font-weight: 700;
     line-height: 1.2;
@@ -235,15 +239,20 @@ body {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
 }
 
-.about-text span {
+.about-heading span {
     color: #FEE6C0;
 }
 
-.about-text > p {
+.about-heading > p {
     color: #FEE6C0;
     font-weight: 600;
     margin: 20px 0px 20px 0px;
     text-align: right;
+}
+
+.about-heading {
+    max-width: 620px;
+    margin-bottom: 20px;
 }
 
 .about-grid {
@@ -277,7 +286,7 @@ body {
     .about-section {
         background-color: #4A290A;
         height : fit-content;
-        padding: 30px 20px 30px 0px;
+        padding: 50px 20px 50px 0px;
         display: flex;
         padding-right: 20px;
         justify-content: center;
@@ -299,20 +308,26 @@ body {
         margin: 15px;
     }
 
-    .about-text h1 {
+    .about-heading{
+        margin-bottom: 0;
+    }
+
+    .about-heading > h1 {
         font-size: 48px;
         text-align: center;
     }
 
-    .about-text > p {
-        font-size: 10px;
+    .about-heading > p {
+        font-size:9px;
         text-align: center;
+        margin: 20px;
     }
 
     .about-grid {
         display: grid; 
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 10px;
         grid-template-columns: repeat(1, 4fr); 
         gap: 20px;
     }
@@ -370,12 +385,12 @@ body {
         text-align: center;
     }
 
-    .about-text h1 {
+    .about-heading > h1 {
         font-size: 60px;
         text-align: center;
     }
 
-    .about-text > p {
+    .about-heading > p {
         font-size: 15px;
         text-align: center;
     }
@@ -414,12 +429,16 @@ body {
         width: 500px;
     }
 
-    .about-text h1 {
+    .about-heading {
+        max-width: 500px;
+    }
+
+    .about-heading > h1 {
         font-size: 70px;
     }
 
-    .about-text > p {
-        font-size: 14px;
+    .about-heading > p {
+        font-size: 13px;
         margin: 30px 0px 30px 0px;
     }
 
@@ -434,43 +453,4 @@ body {
     .about-item p {
         font-size: 8.5px;
     }
-}
-.testimonials-section {
-    background-color: #f3e4cd;
-    padding: 50px 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
-
-.testimonials-section h2 {
-    font-size: 36px;
-    color: #7b5936;
-    margin-bottom: 30px;
-    font-weight: 700;
-}
-
-.testimonials-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.testimonial-item {
-    background-color: #7b5936;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.testimonial-item h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.testimonial-item p {
-    font-size: 16px;
-    font-weight: 400;
 }

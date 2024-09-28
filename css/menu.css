@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -7,7 +13,7 @@ body {
 }
 
 .menu-section {
-    padding: 50px 20px;
+    padding: 40px 50px;
     background-color: #FFEEDB;
 }
 
@@ -18,22 +24,25 @@ body {
 }
 
 .menu-title {
-    font-size: 36px;
-    font-weight: 700;
-    color: #5C3A1E;
+    font-size: 72px;
     margin-bottom: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #774E29;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .menu-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .menu-item {
-    background-color: #A35E3A;
-    border-radius: 10px;
+    background-color: #774E29;
+    border-radius: 30px;
+    padding: 10px;
     padding: 20px;
     width: 220px;
     text-align: center;
@@ -53,10 +62,9 @@ body {
 }
 
 .menu-item h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #FFF;
-    margin: 10px 0;
 }
 
 .menu-item p {
@@ -71,7 +79,7 @@ body {
 }
 
 .menu-button {
-    background-color: #A35E3A;
+    background-color: #774E29;
     color: #FFEEDB;
     padding: 15px 30px;
     border: none;
@@ -86,4 +94,30 @@ body {
 .menu-button:hover {
     background-color: #7A422D;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-title {
+        margin-top: 40px;
+        font-size: 48px;
+    }
+
+    .menu-section {
+        padding: 20px;
+    }
+
+    .menu-grid {
+        gap: 20px;
+        row-gap: 15px;
+    }
+
+    .menu-item {
+        width: 150px;
+        padding: 15px;
+    }
+
+    .menu-button-container {
+        margin-bottom: 40px;
+    }
 }

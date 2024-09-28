@@ -1,120 +1,128 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
- }
 
 body {
-    background-color: #FFF1DA;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFEEDB;
 }
 
-  .testi-section {
-    padding: 40px 0px 60px 0;
-    height: fit-content;
-    width: 100%;
-    overflow: hidden;
+.testimonials-section {
+    background-color: #FFEEDB;
+    padding: 50px 50px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     flex-direction: column;
-  }
+    font-family: 'Poppins', sans-serif;
+}
 
-  .testi-heading {
+.testimonials-section h2 {
     font-size: 75px;
     font-weight: 700;
     line-height: 1.2;
     text-align: right;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     color: #774E29;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
 }
 
-  .testi-container {
-    display: flex;
-    column-gap: 30px;
-    justify-content: center;
-    align-items: center;
-  }
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    row-gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-  .testi-item {
+.testimonial-item {
     background-color: #4A290A;
-    padding: 20px 25px 30px 25px;
-    width: 300px;
+    color: #ffffff;
+    padding: 30px;
     border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     text-align: center;
-  }
+    padding-top: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-  .testi-item > img {
-    width: 100px;
-    height: 100px;
+.testimonial-profile {
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
     top: -40px;
     left: 50%;
     transform: translateX(-50%);
-    border: 3px solid #4A290A;
-  }
+    border: 3px solid #4A290A; 
+}
 
-  .testi-item > h4 {
-    margin-top: 50px;
-    font-size: 18px;
-    color: #FEE6BF;
-    font-weight: bold;
-  }
+.testimonial-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px; 
+    margin-bottom: 10px;
+}
 
-  .testi-item > p {
-    font-size: 15px;
-    color: #FFFFFF;
-    margin-top: 10px;
+.testimonial-item p {
+    font-size: 14px;
     text-align: justify;
-  }
+    font-weight: 400;
+}
 
-  @media (max-width: 767px) {
-    .testi-heading{
-        font-size: 45px;
+.testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+    .testimonials-section {
+        padding-top: 50px;
+        padding-bottom: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
-    .testi-container {
-        display: flex;
-        flex-direction: column;
+    .testimonials-container{
+    grid-template-columns: repeat(2, 1fr); 
+    row-gap: 40px;
+    }
+
+    .testimonials-section h2 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .testimonial-item {
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        border-radius: 20px;
+        max-width: 200px;
+    }
+
+    .testimonial-profile {
+        width: 60px;
+        height: 60px;
+        top: -30px;
+    }
+
+    .testimonial-item h3 {
+        font-size: 16px;
+    }
+    
+    .testimonial-item p {
+        font-size: 9px;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1050px) {
+    .testimonials-container{
+        grid-template-columns: repeat(2, 1fr); 
         row-gap: 60px;
-    }
-
-    .testi-item > img {
-        width: 65px;
-        height: 65px;
-      }
-
-    .testi-item > h4 {
-        margin-top: 16px;
-        font-size: 12px;
-      }
-    
-      .testi-item > p {
-        font-size: 8px;
-        text-align: justify;
-      }
-  }
-
-  @media (min-width: 767px) and (max-width: 1050px){
-    .testi-item {
-        width: 230px;
-        height: 360px;
-      }
-
-    testi-item > h4 {
-        margin-top: 18px;
-        font-size: 12px;
-      }
-    
-      .testi-item > p {
-        font-size: 12.5px;
-        text-align: justify;
-      }
-
-  }
+        }
+}

@@ -3,11 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/testimoni.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/porter-sans-block" rel="stylesheet">
     <title>The Cozy Cup</title>
+    <script>
+        function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const hamburger = document.querySelector('.hamburger');
+
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+
+    if (hamburger.classList.contains('active')) {
+        hamburger.innerHTML = '✖';  // Close icon
+    } else {
+        hamburger.innerHTML = '&#9776;'; // Hamburger icon
+    }
+}
+
+    </script>
 </head>
 <body>
+    <nav class="navbar">
+        <a href="#" class="logo">
+            THE<br>COZY<br>CUP
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
     <section class="hero-section">
     <div class="hero-container">
         <div class="hero-text">
@@ -32,8 +66,10 @@
             <img src="/images/coffeesplash.png">
             </div>
             <div class="about-text">
+                <div class="about-heading">
             <h1>Our <span>Products</span></h1>
             <p>At The Cozy Cup, we take pride in serving the finest coffee, carefully sourced from the world’s renowned regions and crafted with only the best beans to ensure every cup reflects our unwavering commitment to quality.</p>
+        </div>
             <div class="about-grid">
                 <div class="about-item">
                     <h3>Premium Coffee Selection</h3>
@@ -51,14 +87,99 @@
                     <h3>Premium Coffee Selection</h3>
                     <p>Discover our rotating seasonal specialties, featuring innovative flavors.</p>
                 </div>
-              
-                        </div>
-                    </div>
-                </section>
-                
             </div>
             </div>
         </div>
     </section>
+    <section class="menu-section">
+        <div class="menu-container">
+            <h1 class="menu-title">Our Menu</h1>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="/images/coffeemilk.png" alt="Coffee Milk">
+                    <h3>Coffee Milk</h3>
+                    <p>Rp. 25.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/images/caramellatte.png" alt="Caramel Latte">
+                    <h3>Caramel Latte</h3>
+                    <p>Rp. 25.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/images/cafemocha.png" alt="Caffe Mocha" class="mocha">
+                    <h3>Caffe Mocha</h3>
+                    <p>Rp. 25.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/images/caramelmachiato.png" alt="Caramel Machiato">
+                    <h3>Caramel Machiato</h3>
+                    <p>Rp. 24.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/images/flatwhite.png" alt="Flat White">
+                    <h3>Flat White</h3>
+                    <p>Rp. 25.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/images/vanillalatte.png" alt="Vanilla Latte">
+                    <h3>Vanilla Latte</h3>
+                    <p>Rp. 22.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/images/hazelnutlatte.png" alt="Hazelnut Latte">
+                    <h3>Hazelnut Latte</h3>
+                    <p>Rp. 23.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/images/shakenespresso.png" alt="Shaken Espresso">
+                    <h3>Shaken Espresso</h3>
+                    <p>Rp. 24.000</p>
+                </div>
+            </div>
+            <div class="menu-button-container">
+                <button class="menu-button">Discover More Menu</button>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="/images/gambar1.jpeg" >
+            </div>
+            <div class="gallery-item">
+                <img src="/images/gambar2.jpeg" >
+            </div>
+            <div class="gallery-item">
+                <img src="/images/gambar3.jpeg" >
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <h2>Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-item">
+                <img src="images/anon.jpeg" alt="Sarah T." class="testimonial-profile">
+                <h3>Sarah T.</h3>
+                <p>"The Cozy Cup is my favorite coffee shop! The warm atmosphere makes it a perfect place to relax. I love trying their seasonal specials, and the friendly staff always remembers my order. Every visit feels like coming home!”</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="images/anon.jpeg" alt="John D." class="testimonial-profile">
+                <h3>John D.</h3>
+                <p>"A fantastic place to unwind with a cup of coffee. The Cozy Cup has a unique charm and delicious pastries that keep me coming back. It’s my go-to spot for working on my laptop or meeting friends!”</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="images/anon.jpeg" alt="Emily R." class="testimonial-profile">
+                <h3>Emily R.</h3>
+                <p>"The Cozy Cup never disappoints! Their commitment to high-quality coffee really shows in every cup. Whether I’m grabbing a quick coffee or enjoying a treat, I always leave happy. It's my favorite place in town!”</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="images/anon.jpeg" alt="Michael S." class="testimonial-profile">
+                <h3>Michael S.</h3>
+                <p>"Best coffee shop around! The friendly staff and cozy ambiance create a welcoming vibe. With a variety of drinks and community events, it feels like a gathering place for friends. I always look forward to my visits!”</p>
+            </div>
+        </div>
+    </section>
+    
 </body>
 </html>
