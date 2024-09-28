@@ -83,14 +83,45 @@ body {
     transform: scale(1.1); /* Efek zoom saat hover */
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .gallery-container {
         flex-direction: column;
         gap: 30px;
         max-width: 300px;
     }
 
+    .gallery-con1 {
+        flex-direction: column;
+    }
+
+    .gallery-con2 {
+        flex-direction: column;
+        max-width: 300px;
+    }
+
     .gallery-section h2 {
         font-size: 48px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1050px) {
+    .gallery-container {
+        max-width: 700px;
+    }
+
+    .gallery-con2 {
+        flex-direction: column;
+        max-width: 230px;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1200px) {
+    .gallery-container {
+        max-width: 900px;
+    }
+
+    .gallery-con2 {
+        flex-direction: column;
+        max-width: 300px;
     }
 }

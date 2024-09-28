@@ -67,7 +67,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #FFF1DA;
+        background-color: #FFEEDB;
         gap: 40px;
         transition: left 0.3s ease;
     }
