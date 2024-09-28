@@ -1,0 +1,105 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-section {
+    position: relative;
+    height: 500px;
+    background-color: #3F2F20;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/images/contactbg.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.contact-container {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+.contact-container > h1 {
+    font-size: 55px;
+    font-weight: 700;
+    color: #FEE6C0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-container > h3 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.contact-button {
+    display: flex;
+    column-gap: 20px;
+}
+
+.contact-button > button {
+    margin: 20px 0;
+    background-color: #A97D55;
+    padding: 5px 20px;
+    color: #FEE6C0;
+    font-weight: 600;
+    border-radius: 50px;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 767px) and (max-width: 1050px) {
+    .contact-container > h1 {
+        font-size: 40px;
+    }
+
+    .contact-container > h3 {
+        font-size: 10px;
+}
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        max-width: 320px;
+    }
+
+    .contact-container > h1 {
+        font-size: 37px;
+    }
+
+    .contact-container > h3 {
+        font-size: 9px;
+        text-align: left;
+    }
+
+    .contact-button {
+        width: 100%;
+        align-items: left;
+    }
+
+    .contact-button > button {
+        padding: 5px 15px;
+        font-size: 10px;
+    }
+
+}
