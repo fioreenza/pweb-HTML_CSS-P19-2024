@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
  }
 
 body {
@@ -51,15 +52,24 @@ body {
     column-gap: 20px;
 }
 
-.hero-text button {
+.hero-text a {
     background-color: #774E29;
     padding: 5px 20px 5px 20px;
     color: #FFF7EB;
     font-weight: 600;
     border-radius: 50px;
     border: none;
+    text-decoration: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    transition: .3s ease-in;
 }
+
+.hero-text a:hover {
+    background-color: #A97D55;
+    transform: translateY(-2px);
+    scale: 1.1;
+}
+
 
 .hero-img {
     width: 35%;
@@ -188,14 +198,6 @@ body {
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
- }
-
-
 .about-section {
     background-color: #4A290A;
     height : fit-content;
@@ -279,6 +281,7 @@ body {
 }
 
 .about-item p {
+    color: #FFF7EB;
     font-size: 10px;
 }
 

@@ -13,7 +13,7 @@ body {
 }
 
 .menu-section {
-    padding: 40px 50px;
+    padding: 80px 20px;
     background-color: #FFEEDB;
 }
 
@@ -21,6 +21,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-title {
@@ -73,11 +77,6 @@ body {
     color: #FFEEDB;
 }
 
-
-.menu-button-container {
-    margin-top: 30px;
-}
-
 .menu-button {
     background-color: #774E29;
     color: #FFEEDB;
@@ -86,17 +85,18 @@ body {
     border-radius: 25px;
     font-size: 16px;
     font-weight: 600;
+    margin-top: 50px;
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .menu-button:hover {
-    background-color: #7A422D;
+    background-color: #A97D55;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .menu-title {
         margin-top: 40px;
@@ -110,6 +110,7 @@ body {
     .menu-grid {
         gap: 20px;
         row-gap: 15px;
+        max-width: 400px;
     }
 
     .menu-item {
@@ -121,3 +122,12 @@ body {
         margin-bottom: 40px;
     }
 }
+
+@media (min-width: 767px) and (max-width: 1050px) {
+    .menu-grid{
+        max-width: 500px;
+    }
+}
+
+
+

@@ -6,7 +6,7 @@ body {
 
 .gallery-section {
     background-color: #4d2e1a; /* Warna coklat latar belakang */
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -15,6 +15,7 @@ body {
     font-weight: 700;
     color: #FEE6C0;
     margin-bottom: 20px;
+    line-height: 1.2;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
 }
 
@@ -27,6 +28,26 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.gallery-button {
+    background-color: #774E29;
+    color: #FFEEDB;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.gallery-button:hover {
+    background-color: #A97D55;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 
 .gallery-item {
     width: 100%;

@@ -1,4 +1,4 @@
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -56,16 +56,24 @@
     column-gap: 20px;
 }
 
-.contact-button > button {
+.contact-button > a {
     margin: 20px 0;
-    background-color: #A97D55;
+    background-color: #774E29;
     padding: 5px 20px;
-    color: #FEE6C0;
+    color: #FFF7EB;
     font-weight: 600;
     border-radius: 50px;
     font-size: 15px;
     border: none;
+    text-decoration: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all .3s ease-out;
+}
+
+.contact-button > a:hover {
+    background-color: #A97D55;
+    transform: translateY(-2px);
+    scale: 1.1;
 }
 
 @media (min-width: 767px) and (max-width: 1050px) {
@@ -78,7 +86,7 @@
 }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .contact-container {
         max-width: 320px;
     }
@@ -97,7 +105,7 @@
         align-items: left;
     }
 
-    .contact-button > button {
+    .contact-button > a {
         padding: 5px 15px;
         font-size: 10px;
     }
